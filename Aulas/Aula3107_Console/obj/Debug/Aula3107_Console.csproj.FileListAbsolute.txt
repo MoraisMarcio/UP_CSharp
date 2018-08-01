@@ -1,7 +1,0 @@
-C:\Users\1620759\CSharp\Aulas\Aula3107_Console\bin\Debug\'.exe.config
-C:\Users\1620759\CSharp\Aulas\Aula3107_Console\bin\Debug\'.exe
-C:\Users\1620759\CSharp\Aulas\Aula3107_Console\bin\Debug\'.pdb
-C:\Users\1620759\CSharp\Aulas\Aula3107_Console\obj\Debug\Aula3107_Console.csprojResolveAssemblyReference.cache
-C:\Users\1620759\CSharp\Aulas\Aula3107_Console\obj\Debug\Aula3107_Console.csproj.CoreCompileInputs.cache
-C:\Users\1620759\CSharp\Aulas\Aula3107_Console\obj\Debug\'.exe
-C:\Users\1620759\CSharp\Aulas\Aula3107_Console\obj\Debug\'.pdb
