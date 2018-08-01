@@ -20,7 +20,7 @@ namespace Aula3107_Console
             Console.WriteLine("Digite o 2º número");
             Num2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Qual operação deseja realizar? " +
+            Console.WriteLine("Qual operação deseja realizar?" +
                 "\n 1-somar " +
                 "\n 2-subtrair " +
                 "\n 3-dividir " +
@@ -30,29 +30,23 @@ namespace Aula3107_Console
             switch (Op)
             {
                 case 1:
-                    Console.WriteLine(Num1 + Num2);
-                    Console.ReadKey();
+                    Console.WriteLine(Num1 + Num2);                   
                     break;
-
                 case 2:
                     Console.WriteLine(Num1 - Num2);
-                    Console.ReadKey();
+                    //Console.ReadKey();
                     break;
                 case 3:
                     Console.WriteLine(Num1 / Num2);
-                    Console.ReadKey();
+                    //Console.ReadKey();
                     break;
                 case 4:
                     Console.WriteLine(Num1 * Num2);
-                    Console.ReadKey();
+                    //Console.ReadKey();
                     break;
-
             }
-            
-            //Console.WriteLine("Você digitou: " + Id);
-            //Console.ReadKey();
-
-
+                            
+            Console.ReadKey();
 
         }
     }
