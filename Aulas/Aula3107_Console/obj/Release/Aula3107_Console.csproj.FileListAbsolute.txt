@@ -1,0 +1,6 @@
+C:\Users\1620759\CSharp\Aulas\Aula3107_Console\bin\Release\'.exe.config
+C:\Users\1620759\CSharp\Aulas\Aula3107_Console\bin\Release\'.exe
+C:\Users\1620759\CSharp\Aulas\Aula3107_Console\bin\Release\'.pdb
+C:\Users\1620759\CSharp\Aulas\Aula3107_Console\obj\Release\Aula3107_Console.csproj.CoreCompileInputs.cache
+C:\Users\1620759\CSharp\Aulas\Aula3107_Console\obj\Release\'.exe
+C:\Users\1620759\CSharp\Aulas\Aula3107_Console\obj\Release\'.pdb
