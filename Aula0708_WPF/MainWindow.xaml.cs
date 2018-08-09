@@ -25,12 +25,19 @@ namespace Aula0708_WPF
             InitializeComponent();
         }
 
-        string[] operador;
 
-        private void btn1_Click(object sender, RoutedEventArgs e)
+        string operador;
+
+        private void btnNumerador(object sender, RoutedEventArgs e)
         {
-            Tela.Content += "1";
+            Button btn = (Button)
+            Tela.Content = Tela.Content + operador +
         }
+
+        //private void btn1_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Tela.Content += "1";
+        //}
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
@@ -110,5 +117,7 @@ namespace Aula0708_WPF
         {
             
         }
+
+        
     }
 }
