@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace Aula0708_WPF
 {
@@ -25,90 +15,124 @@ namespace Aula0708_WPF
             InitializeComponent();
         }
 
-        string[] operador;
+        //string label;
 
-        private void btn1_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "1";
-        }
+        string operador;
+        int a = 0;
+        bool validar = false;
 
-        private void btn2_Click(object sender, RoutedEventArgs e)
+        private void btnNumerador(object sender, RoutedEventArgs e)
         {
-            Tela.Content += "2";
-        }
-
-        private void btn3_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "3";
-        }
-
-        private void btn4_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "4";
-        }
-
-        private void btn5_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "5";
-        }
-
-        private void btn6_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "6";
-        }
-
-        private void btn7_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "7";
-        }
-
-        private void btn8_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "8";
-        }
-
-        private void btn9_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "9";
-        }
-
-        private void btn0_Click(object sender, RoutedEventArgs e)
-        {
-            Tela.Content += "0";
-        }
+            Button bt = (Button)sender;
+            Tela.Text = Tela.Text + bt.Content;
+        }   
 
         private void btnMenos_Click(object sender, RoutedEventArgs e)
         {
-            operador = "-";
-            Tela.Content += "-";
+            if (validar == true)
+            {
+                a = a - Convert.ToInt32(Tela.Text);
+                Label.Content = Convert.ToString(a) + "-";
+                Tela.Text = "";
+                operador = "-";
+            }
+            else
+            {
+                Label.Content = Tela.Text + btnMenos.Content;
+                a = Convert.ToInt32(Tela.Text);
+                Tela.Text = "";
+                operador = "-";
+                validar = true;
+            }
+           
         }
 
         private void btnMais_Click(object sender, RoutedEventArgs e)
         {
-            operador = "+";
-            Tela.Content += "+";
+            if (validar == true)
+            {
+                a = a + Convert.ToInt32(Tela.Text);
+                Label.Content = Convert.ToString(a) + "+";
+                Tela.Text = "";
+                operador = "+";
+            }
+            else
+            {
+                Label.Content = Tela.Text + btnMais.Content;
+                a = Convert.ToInt32(Tela.Text);
+                Tela.Text = "";
+                operador = "+";
+                validar = true;
+            }
         }
 
         private void btnDivide_Click(object sender, RoutedEventArgs e)
         {
-            operador = "-";
-            Tela.Content += "/";
+            if (validar == true)
+            {
+                a = a / Convert.ToInt32(Tela.Text);
+                Label.Content = Convert.ToString(a) + "/";
+                Tela.Text = "";
+                operador = "/";
+            }
+            else
+            {
+                Label.Content = Tela.Text + btnDivide.Content;
+                a = Convert.ToInt32(Tela.Text);
+                Tela.Text = "";
+                operador = "/";
+                validar = true;
+            }
         }
 
         private void btnMultiplica_Click(object sender, RoutedEventArgs e)
         {
-            operador = "*";
-            Tela.Content += "*";
+            if (validar == true)
+            {
+                a = a * Convert.ToInt32(Tela.Text);
+                Label.Content = Convert.ToString(a) + "*";
+                Tela.Text = "";
+                operador = "*";
+            }
+            else
+            {
+                Label.Content = Tela.Text + btnMultiplica.Content;
+                a = Convert.ToInt32(Tela.Text);
+                Tela.Text = "";
+                operador = "*";
+                validar = true;
+            }
         }
 
         private void btnPonto_Click(object sender, RoutedEventArgs e)
         {
-            Tela.Content += ".";
+            Tela.Text += ".";
         }
 
         private void btnResultado_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (operador == "+")
+            {
+                Label.Content = Label.Content + Tela.Text + "=";
+                Tela.Text = Convert.ToString(a + Convert.ToInt32(Tela.Text));
+            }
+            else if (operador == "-")
+            {
+                Label.Content = Label.Content + Tela.Text + "=";
+                Tela.Text = Convert.ToString(a - Convert.ToInt32(Tela.Text));
+            }
+            else if (operador == "/")
+            {
+                Label.Content = Label.Content + Tela.Text + "=";
+                Tela.Text = Convert.ToString(a / Convert.ToInt32(Tela.Text));
+            }
+            else if (operador == "*")
+            {
+                Label.Content = Label.Content + Tela.Text + "=";
+                Tela.Text = Convert.ToString(a * Convert.ToInt32(Tela.Text));
+            }
+
         }
+
     }
 }
