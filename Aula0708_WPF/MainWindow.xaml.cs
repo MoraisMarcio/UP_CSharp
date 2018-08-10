@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace Aula0708_WPF
 {
@@ -25,19 +12,13 @@ namespace Aula0708_WPF
             InitializeComponent();
         }
 
+        int operador;
+        float n1, n2; 
 
-        string operador;
-
-        private void btnNumerador(object sender, RoutedEventArgs e)
+        private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            Button btn = (Button)
-            Tela.Content = Tela.Content + operador +
+            Tela.Content += "1";
         }
-
-        //private void btn1_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Tela.Content += "1";
-        //}
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
@@ -86,26 +67,30 @@ namespace Aula0708_WPF
 
         private void btnMenos_Click(object sender, RoutedEventArgs e)
         {
-            operador = "-";
-            Tela.Content += "-";
+            operador = 1;
+            n1 = float.Parse(Tela.Content.ToString());
+            Tela.Content = "-";
         }
 
         private void btnMais_Click(object sender, RoutedEventArgs e)
         {
-            operador = "+";
+            operador = 2;           
+            n1 = float.Parse(Tela.Content.ToString());
             Tela.Content += "+";
         }
 
         private void btnDivide_Click(object sender, RoutedEventArgs e)
         {
-            operador = "-";
-            Tela.Content += "/";
+            operador = 3;
+            n1 = float.Parse(Tela.Content.ToString());
+            Tela.Content = "/";
         }
 
         private void btnMultiplica_Click(object sender, RoutedEventArgs e)
         {
-            operador = "*";
-            Tela.Content += "*";
+            operador = 4;
+            n1 = float.Parse(Tela.Content.ToString());
+            Tela.Content = "*";
         }
 
         private void btnPonto_Click(object sender, RoutedEventArgs e)
@@ -115,7 +100,25 @@ namespace Aula0708_WPF
 
         private void btnResultado_Click(object sender, RoutedEventArgs e)
         {
-            
+            switch (operador)
+            {
+                case 1:
+                    Tela.Content = (n1 - n2).ToString();
+                    break;
+
+                case 2:
+                    Tela.Content = (n1 + n2).ToString();
+                    break;
+
+                case 3:
+                    Tela.Content = (n1 / n2).ToString();
+                    break;
+
+                case 4:
+                    Tela.Content = (n1 * n2).ToString();
+                    break;
+
+            }
         }
 
         
