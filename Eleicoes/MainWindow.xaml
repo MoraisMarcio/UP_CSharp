@@ -7,13 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="campoNome" HorizontalAlignment="Left" Height="23" Margin="131,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Initialized="campoNome_Initialized"/>
+        <TextBox x:Name="campoNumero" HorizontalAlignment="Left" Height="23" Margin="131,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
         <TextBlock HorizontalAlignment="Left" Margin="16,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right"><Run Text="Nome do Candidato"/><Run Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="16,55,0,0" TextWrapping="Wrap" Text="Número:" VerticalAlignment="Top" Width="110" TextAlignment="Right"/>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="273,83,0,0" VerticalAlignment="Top" Width="75" Click="btnCadastrar_Click"/>
-        <TextBox x:Name="ListaCandidatos" HorizontalAlignment="Left" Height="187" Margin="16,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" BorderBrush="Black"/>
-        <Button x:Name="Listar" Content="Listar Candidatos" HorizontalAlignment="Left" Margin="16,110,0,0" VerticalAlignment="Top" Width="110" Click="Listar_Click"/>
-        <TextBox x:Name="campoNumero" HorizontalAlignment="Left" Height="23" Margin="131,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="campoNome" HorizontalAlignment="Left" Height="23" Margin="131,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="176,76,0,0" VerticalAlignment="Top" Width="75" Click="btnCadastrar_Click"/>
+        <TextBox x:Name="ListaCandidatos" HorizontalAlignment="Left" Height="187" Margin="16,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" BorderBrush="Black"/>
+        <Button x:Name="limparLista" Content="Limpar Lista" HorizontalAlignment="Left" Margin="16,110,0,0" VerticalAlignment="Top" Width="110" Click="limparLista_Click"/>
+        <TextBox x:Name="campoNomeVoto" HorizontalAlignment="Left" Height="23" Margin="418,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Initialized="campoNome_Initialized"/>
+        <TextBox x:Name="campoNumeroVoto" HorizontalAlignment="Left" Height="23" Margin="418,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="286,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextAlignment="Right" Width="127"><Run Text="Nome do Candidato"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="286,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" TextAlignment="Right"><Run Text="Número"/><Run Text=" do candidato"/><Run Text=":"/></TextBlock>
+        <Button x:Name="btnVotar" Content="Votar" HorizontalAlignment="Left" Margin="463,51,0,0" VerticalAlignment="Top" Width="75" Click="btnVotar_Click"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="419" Margin="271,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="3"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="419" Margin="552,10,0,-10" Stroke="Black" VerticalAlignment="Top" Width="3"/>
+        <TextBox x:Name="textConfirmacaoVoto" HorizontalAlignment="Left" Height="80" Margin="286,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" BorderBrush="Black"/>
+
 
     </Grid>
 </Window>
