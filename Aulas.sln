@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula0708_WPF", "Aula0708_WP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eleicoes", "Eleicoes\Eleicoes.csproj", "{898F2935-CE13-418C-A81E-B86CBF3FA54A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula1408_EntityFramework1", "Aula1408_EntityFramework1\Aula1408_EntityFramework1.csproj", "{D23C55C8-387E-4A58-B1F4-11A4F7D5DD1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{898F2935-CE13-418C-A81E-B86CBF3FA54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{898F2935-CE13-418C-A81E-B86CBF3FA54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{898F2935-CE13-418C-A81E-B86CBF3FA54A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D23C55C8-387E-4A58-B1F4-11A4F7D5DD1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23C55C8-387E-4A58-B1F4-11A4F7D5DD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23C55C8-387E-4A58-B1F4-11A4F7D5DD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23C55C8-387E-4A58-B1F4-11A4F7D5DD1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
