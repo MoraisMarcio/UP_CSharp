@@ -40,10 +40,15 @@ namespace Aula1408_EntityFramework1
      * CRIANDO BASE ( ABORDAGEM: ModelFirst )
      * 
      *  > Botão direito no projeto > Novo item > Dados > ADO.NET Entity Data Model > Empty code "Model"
+     *      
      *      - Criar Nova Entidade
      *  > Botão direito na tela em branco > Add New Entity
+     *  
      *      - Criar Novo Relacionamento
      *  > Botão direito na tela em branco > Add New Association
+     *  
+     *      - Criar New Connection
+     *  > Botão direito na tela em branco > Generate Database From Model > New Connection
      *  
      */
     public class Class1
