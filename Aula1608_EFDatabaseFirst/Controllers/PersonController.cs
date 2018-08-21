@@ -54,5 +54,24 @@ namespace Aula1608_EFDatabaseFirst.Controllers
                 contexto.SaveChanges();
             }
         }
+
+        List<Person> PersquisarPorFirstName(string firstName)
+        {
+            // LINQ
+            // Exemplos para consulta de LINQs:
+            // https://www.youtube.com/watch?v=lAdOdisVMWA
+
+            AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
+
+            //  var lista = from p in contexto.Person
+            //  select p;
+
+            var lista = from p in contexto.Person
+                        where p.FirstName == firstName
+                        select p;
+
+            return lista.ToList();
+        }
     }
+
 }
