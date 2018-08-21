@@ -27,7 +27,7 @@ namespace Aula1608_EFDatabaseFirst.Controllers
             return contexto.Person.Find(id);
         }
 
-        void Excluire(int id)
+        void Excluir(int id)
         {
             Person pExcluir = BuscarPorID(id);
             
@@ -35,6 +35,22 @@ namespace Aula1608_EFDatabaseFirst.Controllers
             {
                 AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
                 contexto.Person.Remove(pExcluir);
+                contexto.SaveChanges();
+            }
+        }
+
+        void Editar(int id, Person novosDadosPerson)
+        {
+            Person personAntigo = BuscarPorID(id);
+
+            if (personAntigo != null)
+            {
+                personAntigo.FirstName = novosDadosPerson.FirstName;
+                personAntigo.LastName = novosDadosPerson.LastName;
+                personAntigo.Title = novosDadosPerson.Title;
+
+                AdventureWorks2016Entities contexto = new AdventureWorks2016Entities();
+                contexto.Entry(personAntigo).State = System.Data.Entity.EntityState.Modified;
                 contexto.SaveChanges();
             }
         }
