@@ -23,8 +23,13 @@
             <CheckBox Content="CheckBox" />
             <ComboBox Margin="200 20 200 30">
                 <Button Content="Button"/>
+                <Separator/>
                 <CheckBox Content="CheckBox"/>
             </ComboBox>
+            <ListBox Height="50" Margin="50 20 50 30">
+                <ListBoxItem Content="blablabla"/>
+                <CheckBox Content="CheckBox"/>
+            </ListBox>
         </StackPanel>
         
     </Grid>
