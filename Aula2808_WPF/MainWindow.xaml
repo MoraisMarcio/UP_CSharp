@@ -18,19 +18,34 @@
             <ColumnDefinition Width="8*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Grid.Column="1" Grid.Row="1" Width="600px" Height="250px">
-            <Button Content="Button" Margin="50 20 50 30"/>
-            <CheckBox Content="CheckBox" />
-            <ComboBox Margin="200 20 200 30">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Grid.Column="1" Grid.Row="1" Width="630px" Height="300px">
+            <Button Content="Button" Margin="50 20 50 10"/>
+            <CheckBox Content="CheckBox" Margin="50 10 50 10"/>
+            <ComboBox Margin="200 10 200 10">
                 <Button Content="Button"/>
                 <Separator/>
                 <CheckBox Content="CheckBox"/>
             </ComboBox>
-            <ListBox Height="50" Margin="50 20 50 30">
+            <ListBox Height="40" Margin="50 10 50 10">
                 <ListBoxItem Content="blablabla"/>
                 <CheckBox Content="CheckBox"/>
             </ListBox>
+            <DataGrid Height="40" Margin="50 10 50 5" RenderTransformOrigin="0.496,-0.637"/>
         </StackPanel>
-        
+        <TabControl Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="0,242,0,0" Grid.Row="1" Grid.RowSpan="1" VerticalAlignment="Center" Width="630">
+            <TabItem Header="Aba 1" Width="100">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="69*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Aba 2" Width="100">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>
